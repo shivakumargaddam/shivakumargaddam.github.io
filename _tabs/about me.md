@@ -94,7 +94,6 @@ Welcome to my webpage! I am a PhD scholar in the Department of Metallurgical and
 ## Contact
 - **Email**   : [shivakumar.gdm@gmail.com](mailto:shivakumar.gdm@gmail.com)  
 - **LinkedIn**: [linkedin.com/in/shivakumargaddam](https://www.linkedin.com/in/shivakumargaddam)  
-- **GitHub**  : [github.com/shivakumargaddam](https://github.com/shivakumargaddam)
 
 Feel free to reach out for collaborations, questions, or opportunities. I'm always excited to connect!  
 
