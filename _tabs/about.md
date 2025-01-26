@@ -1,8 +1,10 @@
 ---
-# the default layout is 'page'
+layout: page
+title: "About me"
 icon: fas fa-user
 order: 1
 ---
+
 
 Welcome to my webpage! I am a PhD scholar in the Department of Metallurgical and Materials Engineering at the Indian Institute of Technology Madras, Chennai, India. Currently, I am working with Prof. Anand K. Kanjarla at the Laboratory for Mechanics of Microstructures, IIT Madras. I have a passion for mathematics and programming, which drives my enthusiasm for working in field of computational mechanics. Currently, I am exploring phase-field modelling of fracture in polycrystals and its implementation using the scaled boundary finite element method.
 
