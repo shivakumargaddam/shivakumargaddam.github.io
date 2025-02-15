@@ -53,6 +53,7 @@ Welcome to my webpage! I am a PhD scholar in the Department of Metallurgical and
      Laboratory for Mechanics of Microstructures  
      Dept. of Metallurgical and Materials Engineering, IIT Madras.
   2. *Prof. Sundararajan Natarajan*  
+     Integrated Modelling and Simulation Laboratory  
      Dept. of Mechanical Engineering, IIT Madras.
 - **Duration**: Jul 2022 - Present
 - **Description**: 
