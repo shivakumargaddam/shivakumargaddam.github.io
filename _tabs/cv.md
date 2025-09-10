@@ -6,7 +6,7 @@ order: 1
 ---
 
 
-<div class="alert alert-secondary mb-4">
+<div style="border: 1px solid #ff7300ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
   <h4 class="mt-0"><i class="fas fa-user-tie me-2"></i> About Me</h4>
   I am a PhD scholar in the Department of Metallurgical and Materials Engineering at the Indian Institute of Technology Madras, Chennai, India. 
   Currently, I am working with <em>Prof. Anand K. Kanjarla</em> at the Laboratory for Mechanics of Microstructures, IIT Madras.  
@@ -17,7 +17,7 @@ order: 1
 <div class="my-4"></div>
 
   
-<div class="alert alert-primary mb-4">
+<div style="border: 1px solid #82b900ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
   <h4 class="mt-0"><i class="fas fa-microscope me-2"></i> Research Interests</h4>
   • Scaled boundary finite element method <br>
   • Phase-field modelling of fracture <br>
@@ -32,19 +32,19 @@ order: 1
   <h4 class="mt-0"><i class="fas fa-graduation-cap"></i> Education</h4>
 
   <!-- PhD -->
-  <div class="alert alert-info mb-3">
+  <div class="mb-3">
     <strong>Doctor of Philosophy</strong> in Metallurgical and Materials Engineering  
     <br><small>Jul 2022 – Present | Indian Institute of Technology Madras, Tamil Nadu, India</small>
   </div>
-
+  <hr>
   <!-- MTech -->
-  <div class="alert alert-info mb-3">
+  <div class="mb-3">
     <strong>Master of Technology</strong> in Metallurgical Engineering  
     <br><small>Aug 2020 – Jun 2022 | Indian Institute of Technology Indore, Madhya Pradesh, India</small>
   </div>
-
+  <hr>
   <!-- BTech -->
-  <div class="alert alert-info mb-0">
+  <div class="mb-0">
     <strong>Bachelor of Technology</strong> in Mechanical Engineering  
     <br><small>Oct 2012 – May 2016 | JNTUH College of Engineering Manthani, Telangana, India</small>
   </div>
@@ -58,7 +58,7 @@ order: 1
   <h4 class="mt-0"><i class="fas fa-briefcase me-2"></i> Work Experience</h4>
 
   <!-- GIS Engineer -->
-  <div class="alert alert-success mb-3">
+  <div class="mb-3">
     <strong>GIS Engineer</strong> | <em>RMSI Pvt. Ltd.</em>, Hyderabad, India
     <br><small>Jan 2017 – Dec 2017</small>
     <ul class="mb-0 mt-2">
@@ -66,9 +66,9 @@ order: 1
       <li>Worked as a quality controller to ensure the quality of the maps.</li>
     </ul>
   </div>
-
+  <hr>
   <!-- Manufacturing Intern -->
-  <div class="alert alert-success mb-0">
+  <div class="mb-0">
     <strong>Manufacturing Intern</strong> | <em>Bharat Heavy Electricals Limited</em>, Hyderabad, India
     <br><small>May 2015 – Jun 2015</small>
     <ul class="mb-0 mt-2">
@@ -84,7 +84,7 @@ order: 1
   <h4 class="mt-0"><i class="fas fa-flask me-2"></i> Research</h4>
 
   <!-- Doctoral Research -->
-  <div class="alert alert-warning mb-3">
+  <div class="mb-3">
     <strong>Doctoral Research</strong> <br>
     <small>Jul 2022 – Present</small>
     <ul class="mb-0 mt-2">
@@ -103,9 +103,9 @@ order: 1
       </li>
     </ul>
   </div>
-
+  <hr>
   <!-- Master's Research -->
-  <div class="alert alert-warning mb-3">
+  <div class="mb-3">
     <strong>Master’s Research</strong> <br>
     <small>Jun 2021 – Jun 2022</small>
     <ul class="mb-0 mt-2">
@@ -124,9 +124,9 @@ order: 1
       </li>
     </ul>
   </div>
-
+  <hr>
   <!-- Bachelor's Project -->
-  <div class="alert alert-warning mb-0">
+  <div class="mb-0">
     <strong>Bachelor’s Project</strong> <br>
     <small>Jan 2016 – May 2016</small>
     <ul class="mb-0 mt-2">
@@ -150,19 +150,19 @@ order: 1
 <div style="border: 1px solid #666666ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
   <h4 class="mt-0"><i class="fas fa-tools me-2"></i> Skills</h4>
 
-  <div class="alert alert-secondary mb-3">
+  <div>
     <strong>Programming</strong>: MATLAB, Fortran, Python, Git, OpenMP, MPI, OpenACC
   </div>
 
-  <div class="alert alert-secondary mb-3">
+  <div>
     <strong>CAD</strong>: AutoCAD, Autodesk Inventor Pro, Fusion 360
   </div>
 
-  <div class="alert alert-secondary mb-3">
+  <div>
     <strong>CAE</strong>: Ansys, Abaqus, DAMASK, Gmsh
   </div>
 
-  <div class="alert alert-secondary mb-0">
+  <div>
     <strong>Others</strong>: LaTeX, ParaView
   </div>
 </div>
@@ -171,7 +171,7 @@ order: 1
 <div class="my-4"></div>
 
 
-<div class="alert alert-light mb-4">
+<div style="border: 1px solid #ff0000ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
   <h4 class="mt-0"><i class="fas fa-envelope me-2"></i> Contact</h4>
   <strong>Email: </strong> 
   <a href="mailto:shivakumar.gdm@gmail.com">shivakumar.gdm@gmail.com</a><br>
@@ -180,5 +180,3 @@ order: 1
     linkedin.com/in/shivakumargaddam
   </a>
 </div>
-
-
