@@ -1,6 +1,6 @@
 ---
-layout: page
 title: "CV"
+layout: page
 icon: fas fa-user-tie
 order: 1
 ---
@@ -9,7 +9,7 @@ order: 1
 <div style="border: 1px solid #666666ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
   <h4 class="mt-0"><i class="fas fa-user-tie me-2"></i> About Me</h4>
   I am a PhD scholar in the Department of Metallurgical and Materials Engineering at the Indian Institute of Technology Madras, Chennai, India. 
-  Currently, I am working with <em>Prof. Anand K. Kanjarla</em> at the Laboratory for Mechanics of Microstructures, IIT Madras.  
+  Currently, I am working with <em>Prof. Anand K. Kanjarla (Dept. of MME)</em> and <em>Prof. Sundararajan Natarajan (Dept. of ME)</em>.  
   I have a passion for mathematics and programming, which drives my enthusiasm for computational mechanics.  
   My current research explores phase-field modelling of fracture in polycrystals and its implementation using the scaled boundary finite element method.
 </div>
@@ -20,7 +20,7 @@ order: 1
 <div style="border: 1px solid #666666ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
   <h4 class="mt-0"><i class="fas fa-microscope me-2"></i> Research Interests</h4>
   • Scaled boundary finite element method <br>
-  • Phase-field modelling of fracture <br>
+  • Phase-field modelling of damage <br>
   • Crystal plasticity
 </div>
 
@@ -203,24 +203,78 @@ order: 1
   
 <div style="border: 1px solid #666666ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
   <h4 class="mt-0">
-    <i class="fas fa-microscope me-2"></i> Academic training / Short courses
+    <i class="fas fa-microscope me-2"></i> Academic Training / Short Courses
   </h4>
 
   <ol style="padding-left: 20px; margin-bottom: 0;">
     <li style="margin-bottom: 5px;">
       A summer school course on "Variational fracture mechanics and phase-field models" at the International Centre for Mechanical Sciences (CISM), Udine, Italy. [Jul 2024]
+      <br><strong>Instructors:</strong> Prof. Blaise Bourdin - McMaster University; Prof. Laura De Lorenzis - ETH Zürich; Dr. Jack S. Hale - Université du Luxembourg; Prof. Flaviana Iurlano - Sorbonne Université; Prof. Corrado Maurini - Sorbonne Université; Prof. Peter W. Voorhees - Northwestern University.
     </li>
 
     <li style="margin-bottom: 5px;">
       GIAN course on "Modeling Defects in Crystalline Solids" at IIT Madras, Chennai, India. [Jan 2025]
+      <br><strong>Instructor:</strong> Prof. David Rodney - University of Lyon. 
     </li>
 
     <li style="margin-bottom: 5px;">
       GIAN course on phase field modelling of fracture fatigue and chemo-mechanical degradation of materials at IIT Madras, Chennai, India. [Mar 2025]
+      <br><strong>Instructor:</strong> Prof. Emilio Martínez Pañeda - University of Oxford.
     </li>
   </ol>
 </div>
 
+
+<div class="my-4"></div>
+
+  
+<div style="border: 1px solid #666666ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
+  <h4 class="mt-0">
+    <i class="fas fa-microscope me-2"></i> Academic Courses
+  </h4>
+
+  <ol style="padding-left: 20px; margin-bottom: 0;">
+    <li>
+      Applied finite element analysis
+    </li>
+
+    <li>
+      Nonlinear FEA of solid continua
+    </li>
+
+    <li>
+      Parallel scientific computing
+    </li>
+
+    <li>
+      Engineering Plasticity
+    </li>
+
+    <li>
+      Micromechanics
+    </li>
+
+    <li>
+      Defects in materials
+    </li>
+
+    <li>
+      Computational methods in engg
+    </li>
+
+    <li>
+      Mechanical behaviour of materials
+    </li>
+
+    <li>
+      Mathematical methods for chemical engineers
+    </li>
+
+    <li>
+      Advanced phase transformations
+    </li>
+  </ol>
+</div>
 
 <div class="my-4"></div>
 
