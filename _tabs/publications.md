@@ -1,6 +1,6 @@
 ---
-layout: page
 title: "Publications"
+layout: page
 icon: fas fa-file-alt
 order: 2
 ---
@@ -56,7 +56,7 @@ order: 2
 
    <!-- Publication -->
    <li class="publication-item">
-   <strong>S. K. Gaddam</strong>, TV Varma, A. Ghosh, S. Sarkar,
+   <strong>S. K. Gaddam</strong>, T. V. Varma, A. Ghosh, S. Sarkar,
    "Effect of Crystal Orientation and Crystallographic Anisotropy on Shear
    Band Formation During Ductile Fracture in Fe Single Crystals",
    <em>Metallurgical and Materials Transactions A</em>,
