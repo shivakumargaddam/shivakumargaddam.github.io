@@ -1,6 +1,6 @@
 ---
-title: "[Blog] Archives"
+title: Blog
 layout: archives
-icon: fas fa-archive
+icon: fas fa-pen-nib
 order: 4
 ---

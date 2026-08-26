@@ -2,5 +2,5 @@
 title: "[Blog] Tags"
 layout: tags
 icon: fas fa-tags
-order: 5
+order: 6
 ---

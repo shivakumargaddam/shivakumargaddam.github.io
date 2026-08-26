@@ -2,7 +2,8 @@
 tabs:
   # format: <filename_without_extension>: <value>
   home: Home
-  categories: Blog
+  categories: "[Blog] Categories"
   tags: "[Blog] Tags"
-  archives: "[Blog] Archives"
+  archives: Blog
   about: CV
+  repositories: Open Source

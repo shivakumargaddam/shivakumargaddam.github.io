@@ -1,0 +1,94 @@
+<div class="repository-card">
+
+  {% if include.image %}
+  <div class="repository-image">
+    <img
+      src="{{ include.image | relative_url }}"
+      alt="{{ include.name }}"
+    >
+  </div>
+  {% endif %}
+
+
+  <div class="repository-content">
+
+    <!-- Header -->
+    <div class="repository-header">
+
+      <h2>{{ include.name }}</h2>
+
+      <i
+        class="fab fa-github repository-github"
+        aria-hidden="true"
+      ></i>
+
+    </div>
+
+
+    <!-- Description -->
+    {% if include.description %}
+    <p class="repository-description">
+      {{ include.description }}
+    </p>
+    {% endif %}
+
+
+    <!-- Metadata -->
+    <div class="repository-meta">
+
+      {% if include.language %}
+      <div class="repository-languages">
+        <i class="fas fa-code" aria-hidden="true"></i>
+        <span>{{ include.language }}</span>
+      </div>
+      {% endif %}
+
+
+      <div class="repository-stats">
+
+        {% if include.license %}
+        <span>
+          <i class="fas fa-scale-balanced" aria-hidden="true"></i>
+          {{ include.license }}
+        </span>
+        {% endif %}
+
+        {% if include.stars %}
+        <span>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          {{ include.stars }} stars
+        </span>
+        {% endif %}
+
+        {% if include.forks %}
+        <span>
+          <i class="fas fa-code-branch" aria-hidden="true"></i>
+          {{ include.forks }} forks
+        </span>
+        {% endif %}
+
+      </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    {% if include.updated %}
+    <div class="repository-footer">
+      Updated <strong>{{ include.updated }}</strong>
+    </div>
+    {% endif %}
+
+  </div>
+
+
+  <!-- Full-card GitHub link -->
+  <a
+    href="{{ include.url }}"
+    class="repository-card-link"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="View {{ include.name }} on GitHub"
+  ></a>
+
+</div>

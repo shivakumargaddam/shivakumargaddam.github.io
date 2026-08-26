@@ -1,0 +1,18 @@
+<li class="publication-item">
+
+  <div class="publication-content">
+    {{ include.authors }},
+    "{{ include.title }}",
+    <em>{{ include.journal }}</em>,
+    {{ include.details }}.
+
+    {% if include.doi %}
+      <a href="https://doi.org/{{ include.doi }}"
+         target="_blank"
+         rel="noopener">
+        <strong>DOI ↗</strong>
+      </a>
+    {% endif %}
+  </div>
+
+</li>
