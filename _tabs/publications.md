@@ -7,7 +7,7 @@ order: 2
 
 <ol class="publication-list">
 
-  <div class="publication-year">2025</div>
+  <!-- <div class="publication-year">2025</div> -->
     
     {% include publication.html
       authors='<strong>S. K. Gaddam</strong>, S. Natarajan, A. K. Kanjarla'
@@ -17,7 +17,7 @@ order: 2
       doi="10.1016/j.cma.2025.117864"
     %}
 
-  <div class="publication-year">2024</div>
+  <!-- <div class="publication-year">2024</div> -->
 
     {% include publication.html
       authors='<strong>S. K. Gaddam</strong>, T. V. Varma, A. Ghosh, S. Sarkar'
