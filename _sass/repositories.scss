@@ -1,0 +1,336 @@
+/* Repository grid */
+.repositories {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+
+// ----------------------------------------------------------
+//    Card
+// ----------------------------------------------------------
+.repository-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 2px solid var(--main-border-color);
+  border-radius: 12px;
+  overflow: hidden;
+
+  background: var(--card-bg);
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+
+  box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+}
+
+.repository-card:hover {
+  border-color: var(--link-color);
+  box-shadow: 0 5px 14px rgb(0 0 0 / 10%);
+  transform: translateY(-2px);
+}
+
+/* Full-card clickable area */
+.repository-card-link {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 10;
+
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0 !important;
+
+  background: transparent;
+
+  text-decoration: none !important;
+}
+
+
+/*
+ * Disable Chirpy's normal link decoration.
+ */
+
+.repository-card-link,
+.repository-card-link:hover,
+.repository-card-link:focus,
+.repository-card-link:active {
+  border: 0 !important;
+
+  text-decoration: none !important;
+
+  background: transparent;
+}
+
+
+/* Card hover */
+
+.repository-card:hover {
+  border-color: var(--link-color);
+
+  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+}
+
+
+/* ----------------------------------------------------------
+   Image
+   ---------------------------------------------------------- */
+
+.repository-image {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden;
+
+  line-height: 0;
+}
+
+.repository-image img {
+  position: absolute;
+
+  inset: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0;
+
+  object-fit: cover;
+  object-position: center;
+
+  transform: none !important;
+  transition: none !important;
+}
+
+
+/* ----------------------------------------------------------
+   Content
+   ---------------------------------------------------------- */
+
+.repository-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  min-width: 0;
+
+  margin: 0;
+  padding: 1.15rem 1.25rem 1.1rem;
+}
+
+
+/* ----------------------------------------------------------
+   Header
+   ---------------------------------------------------------- */
+
+.repository-header {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.repository-header h2 {
+  margin: 0;
+
+  font-size: 1.2rem;
+
+  line-height: 1.3;
+}
+
+
+/* ----------------------------------------------------------
+   GitHub icon
+   ---------------------------------------------------------- */
+
+.repository-github {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.1rem;
+  z-index: 2;
+
+  font-size: 1.45rem;
+  line-height: 1;
+
+  color: #000 !important;
+
+  pointer-events: none;
+  text-decoration: none !important;
+  border: 0 !important;
+}
+
+
+/* ----------------------------------------------------------
+   Description
+   ---------------------------------------------------------- */
+
+.repository-description {
+  margin: 0.55rem 0 0;
+
+  color: var(--text-muted-color);
+
+  font-size: 0.9rem;
+
+  line-height: 1.5;
+
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
+  overflow: hidden;
+}
+
+
+/* ----------------------------------------------------------
+   Metadata
+   ---------------------------------------------------------- */
+
+.repository-meta {
+  margin: 1rem 0 0;
+  padding: 0.8rem 0 0;
+
+  border-top: 1px solid var(--main-border-color);
+
+  color: var(--text-muted-color);
+
+  font-size: 0.8rem;
+}
+
+
+/* Programming languages */
+
+.repository-languages {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.4rem;
+
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.4;
+}
+
+
+.repository-languages i {
+  flex-shrink: 0;
+
+  font-size: 0.75rem;
+}
+
+
+/* License / stars / forks */
+
+.repository-stats {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: nowrap;
+
+  gap: 1rem;
+
+  margin: 0.65rem 0 0;
+  padding: 0;
+
+  white-space: nowrap;
+}
+
+
+.repository-stats span {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 0.35rem;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.repository-stats i {
+  flex-shrink: 0;
+
+  font-size: 0.75rem;
+}
+
+
+/* ----------------------------------------------------------
+   Footer
+   ---------------------------------------------------------- */
+
+.repository-footer {
+  margin: auto 0 0;
+
+  padding: 0.8rem 3rem 0 0;
+
+  color: var(--text-muted-color);
+
+  font-size: 0.75rem;
+
+  line-height: 1.4;
+}
+
+
+// ==========================================================
+//    Responsive layout
+// ==========================================================
+/* Tablet */
+@media (max-width: 1100px) {
+  .repositories {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .repositories {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* Very narrow screens */
+@media (max-width: 400px) {
+  .repository-stats {
+    flex-wrap: wrap;
+    white-space: normal;
+    row-gap: 0.5rem;
+  }
+}

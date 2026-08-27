@@ -1,0 +1,10 @@
+<div class="cv-section">
+  <h4 class="cv-section-title">
+    {% if include.icon %}
+      <i class="{{ include.icon }} me-2"></i>
+    {% endif %}
+    {{ include.title }}
+  </h4>
+
+  {{ include.content }}
+</div>

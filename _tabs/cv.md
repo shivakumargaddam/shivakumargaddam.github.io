@@ -6,57 +6,34 @@ order: 1
 ---
 
 
-<div style="border: 2px solid #C2C2C2ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
-  <h4 class="mt-0"><i class="fas fa-user-tie me-2"></i> About Me</h4>
-  I am a PhD scholar in the Department of Metallurgical and Materials Engineering at the Indian Institute of Technology Madras, Chennai, India, working with Prof. Anand K. Kanjarla (MME) and Prof. Sundararajan Natarajan (ME). My research lies in computational mechanics, with a particular interest in developing efficient and scalable computational methods for complex problems in solid mechanics and materials science. My current work focuses on modelling deformation and fracture in polycrystalline materials using the Octree-based Scaled Boundary Finite Element Method (SBFEM).
-</div>
+<!-- About me -->
+{% capture content %}
+I am a PhD scholar in the Department of Metallurgical and Materials Engineering at the Indian Institute of Technology Madras, Chennai, India, working with Prof. Anand K. Kanjarla (MME) and Prof. Sundararajan Natarajan (ME). My research lies in computational mechanics, with a particular interest in developing efficient and scalable computational methods for complex problems in solid mechanics and materials science. My current work focuses on modelling deformation and fracture in polycrystalline materials using the Octree-based Scaled Boundary Finite Element Method (SBFEM).
+{% endcapture %}
 
-<div class="my-4"></div>
+{% include cv-section.html
+  title="About Me"
+  icon="fas fa-user-tie"
+  content=content
+%}
 
-<style>
-  .research-tag {
-    background-color: #f5f5f5;
-    padding: 2px 6px;
-    border-radius: 4px;
-    white-space: nowrap;
-    line-height: 2.0;
-    margin-right: 6px;
-  }
-</style>
+<!-- Research Interests -->
+{% capture content %}
+  {% include tag.html keywords="Scaled boundary finite element method" %}
+  {% include tag.html keywords="Phase-field modelling of damage" %}
+  {% include tag.html keywords="Crystal plasticity" %}
+  {% include tag.html keywords="High-performance computing" %}
+{% endcapture %}
 
-<div style="border: 2px solid #C2C2C2; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
-  <h4 class="mt-0">
-    <i class="fas fa-microscope me-2"></i> Research Interests
-  </h4>
-
-  <p>
-    <span class="research-tag">Scaled boundary finite element method</span>
-    <span class="research-tag">Phase-field modelling of damage</span>
-    <span class="research-tag">Crystal plasticity</span>
-    <span class="research-tag">High-performance computing</span>
-  </p>
-</div>
+{% include cv-section.html
+  title="Research Interests"
+  icon="fas fa-microscope"
+  content=content
+%}
 
 
-<div class="my-4"></div>
-
-<style>
-  .item {
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    padding: 12px 15px;
-    margin-bottom: 12px;
-  }
-
-  .education-year {
-    color: #666;
-  }
-</style>
-
-
-<div style="border: 2px solid #C2C2C2ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
-  <h4 class="mt-0"><i class="fas fa-graduation-cap"></i> Education</h4>
-
+<!-- Education -->
+{% capture content %}
   <!-- PhD -->
   <div class="item">
     <strong>Doctor of Philosophy</strong> in Metallurgical and Materials Engineering
@@ -78,14 +55,17 @@ order: 1
     <br>
     <small>JNTUH College of Engineering Manthani, Telangana, India.</small>
   </div>
-</div>
+{% endcapture %}
+
+{% include cv-section.html
+  title="Education"
+  icon="fas fa-graduation-cap"
+  content=content
+%}
 
 
-<div class="my-4"></div>
-
-<div style="border: 2px solid #C2C2C2ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
-  <h4 class="mt-0"><i class="fas fa-flask me-2"></i> Research</h4>
-
+<!-- Research -->
+{% capture content %}
   <!-- Doctoral Research -->
   <div class="item">
     <strong>Doctoral Research</strong> <br>
@@ -143,197 +123,146 @@ order: 1
       </li>
     </ul>
   </div>
+{% endcapture %}
 
-</div>
+{% include cv-section.html
+  title="Research"
+  icon="fas fa-flask me-2"
+  content=content
+%}
 
+<!-- Conferences -->
+{% capture content %}
+  <ol class="conference-list">
+    <li class="conference-item">
+      <strong>S. K. Gaddam</strong>, S. Natarajan, A. K. Kanjarla,
+      "Application of SBFEM for Polycrystal RVEs: A comparison with conventional FEM",
+      <em>17th World Congress on Computational Mechanics & 10th European Congress on Computational Methods in Applied Sciences and Engineering (WCCM-ECCOMAS)</em>,
+      19–24 July 2026, Munich, Germany.
+    </li>
 
-<div class="my-4"></div>
+    <li class="conference-item">
+      <strong>S. K. Gaddam</strong>, S. Natarajan, A. K. Kanjarla,
+      "Octree-based scaled boundary finite element approach for polycrystal RVEs: implementation of crystal plasticity and comparison with conventional FEM",
+      <em>14th International Symposium on Plasticity and Impact Mechanics (IMPLAST)</em>,
+      12–16 October 2025, IIT Roorkee, India.
+    </li>
 
-  
-<div style="border: 2px solid #C2C2C2ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
-  <h4 class="mt-0">
-    <i class="fas fa-microscope me-2"></i> Conferences
-  </h4>
+    <li class="conference-item">
+      <strong>S. K. Gaddam</strong>, S. Natarajan, A. K. Kanjarla,
+      "Octree-based scaled boundary finite element approach for polycrystal RVEs: a comparison with FEM and FFT",
+      <em>5th International Structural Integrity Conference & Exhibition (SICE)</em>,
+      22–24 October 2024, VNIT Nagpur, India.
+    </li>
+  </ol>
+{% endcapture %}
 
-  <style>
-    .conference-list {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-    counter-reset: conference;
-  }
-
-  .conference-item {
-    counter-increment: conference;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    padding: 12px 15px 12px 45px;
-    margin-bottom: 12px;
-    position: relative;
-  }
-
-  .conference-item::before {
-    content: counter(conference) ".";
-    position: absolute;
-    left: 15px;
-    font-weight: bold;
-  }
-</style>
-
-<ol class="conference-list">
-
-  <li class="conference-item">
-    <strong>S. K. Gaddam</strong>, S. Natarajan, A. K. Kanjarla,
-    "Application of SBFEM for Polycrystal RVEs: A comparison with conventional FEM",
-    <em>17th World Congress on Computational Mechanics & 10th European Congress on Computational Methods in Applied Sciences and Engineering (WCCM-ECCOMAS)</em>,
-    19–24 July 2026, Munich, Germany.
-  </li>
-
-  <li class="conference-item">
-    <strong>S. K. Gaddam</strong>, S. Natarajan, A. K. Kanjarla,
-    "Octree-based scaled boundary finite element approach for polycrystal RVEs: implementation of crystal plasticity and comparison with conventional FEM",
-    <em>14th International Symposium on Plasticity and Impact Mechanics (IMPLAST)</em>,
-    12–16 October 2025, IIT Roorkee, India.
-  </li>
-
-  <li class="conference-item">
-    <strong>S. K. Gaddam</strong>, S. Natarajan, A. K. Kanjarla,
-    "Octree-based scaled boundary finite element approach for polycrystal RVEs: a comparison with FEM and FFT",
-    <em>5th International Structural Integrity Conference & Exhibition (SICE)</em>,
-    22–24 October 2024, VNIT Nagpur, India.
-  </li>
-
-</ol>
-</div>
+{% include cv-section.html
+  title="Conferences"
+  icon="fas fa-users"
+  content=content
+%}
 
 
-<div class="my-4"></div>
-
-  
-<div style="border: 2px solid #C2C2C2ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
-  <h4 class="mt-0">
-    <i class="fas fa-microscope me-2"></i> Teaching Assistantships & Instruction
-  </h4>
-
+<!-- Teaching Assistantships & Instruction -->
+{% capture content %}
   <ol style="padding-left: 20px; margin-bottom: 0;">
     <li style="margin-bottom: 5px;">
       Mechanical Behaviour of Materials (Graduate Core Course) at IIT Madras
     </li>
-
     <li style="margin-bottom: 5px;">
       Finite Element Method in Materials Engineering (Graduate Elective Course) at IIT Madras.
     </li>
   </ol>
-</div>
+{% endcapture %}
 
-
-<div class="my-4"></div>
-
+{% include cv-section.html
+  title="Teaching Assistantships & Instruction"
+  icon="fas fa-chalkboard-teacher"
+  content=content
+%}
   
-<div style="border: 2px solid #C2C2C2ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
-  <h4 class="mt-0">
-    <i class="fas fa-microscope me-2"></i> Academic Training / Short Courses
-  </h4>
-
+<!-- Academic Training / Short Courses -->
+{% capture content %}
   <ol style="padding-left: 20px; margin-bottom: 0;">
     <li style="margin-bottom: 5px;">
       A summer school course on "Variational fracture mechanics and phase-field models" at the International Centre for Mechanical Sciences (CISM), Udine, Italy. [Jul 2024]
       <br><strong>Instructors:</strong> Prof. Blaise Bourdin - McMaster University; Prof. Laura De Lorenzis - ETH Zürich; Dr. Jack S. Hale - Université du Luxembourg; Prof. Flaviana Iurlano - Sorbonne Université; Prof. Corrado Maurini - Sorbonne Université; Prof. Peter W. Voorhees - Northwestern University.
     </li>
-
     <li style="margin-bottom: 5px;">
       GIAN course on "Modeling Defects in Crystalline Solids" at IIT Madras, Chennai, India. [Jan 2025]
       <br><strong>Instructor:</strong> Prof. David Rodney - University of Lyon. 
     </li>
-
     <li style="margin-bottom: 5px;">
       GIAN course on phase field modelling of fracture fatigue and chemo-mechanical degradation of materials at IIT Madras, Chennai, India. [Mar 2025]
       <br><strong>Instructor:</strong> Prof. Emilio Martínez Pañeda - University of Oxford.
     </li>
   </ol>
-</div>
+{% endcapture %}
 
+{% include cv-section.html
+  title="Academic Training / Short Courses"
+  icon="fas fa-certificate"
+  content=content
+%}
 
-<div class="my-4"></div>
+<!-- Academic Courses -->
+{% capture content %}
+  {% include tag.html keywords="Applied finite element analysis" background="#797777" %}
+  {% include tag.html keywords="Nonlinear FEA of solid continua" background="#797777" %}
+  {% include tag.html keywords="Parallel scientific computing" background="#797777" %}
+  {% include tag.html keywords="Engineering Plasticity" background="#797777" %}
+  {% include tag.html keywords="Micromechanics" background="#797777" %}
+  {% include tag.html keywords="Defects in materials" background="#797777" %}
+  {% include tag.html keywords="Computational methods in engg" background="#797777" %}
+  {% include tag.html keywords="Mechanical behaviour of materials" background="#797777" %}
+  {% include tag.html keywords="Mathematical methods for chemical engineers" background="#797777" %}
+  {% include tag.html keywords="Advanced phase transformations" background="#797777" %}
+{% endcapture %}
 
-  
-<div style="border: 2px solid #C2C2C2ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
-  <h4 class="mt-0">
-    <i class="fas fa-microscope me-2"></i> Academic Courses
-  </h4>
+{% include cv-section.html
+  title="Academic Courses"
+  icon="fas fa-book-open"
+  content=content
+%}
 
-  <ol style="padding-left: 20px; margin-bottom: 0;">
-    <li>
-      Applied finite element analysis
-    </li>
+<!-- Technical Skills -->
+{% capture content %}
+  {% include tag.html keywords="Fortran" background="#2B7FFF" %}
+  {% include tag.html keywords="Abaqus" background="#FB2C36" %}
+  {% include tag.html keywords="Julia" background="#2B7FFF" %}
+  {% include tag.html keywords="PETSc" background="#2B7FFF" %}
+  {% include tag.html keywords="MPI" background="#2B7FFF" %}
+  {% include tag.html keywords="OpenMP" background="#2B7FFF" %}
+  {% include tag.html keywords="DAMASK" background="#FB2C36" %}
+  {% include tag.html keywords="MATLAB" background="#2B7FFF" %}
+  {% include tag.html keywords="Python" background="#2B7FFF" %}
+  {% include tag.html keywords="Git" background="#2B7FFF" %}
+  {% include tag.html keywords="Gmsh" background="#FB2C36" %}
+  {% include tag.html keywords="Autodesk Inventor Pro" background="#2D9966" %}
+  {% include tag.html keywords="Fusion 360" background="#2D9966" %}
+  {% include tag.html keywords="Ansys" background="#FB2C36" %}
+  {% include tag.html keywords="AutoCAD" background="#2D9966" %}
+{% endcapture %}
 
-    <li>
-      Nonlinear FEA of solid continua
-    </li>
+{% include cv-section.html
+  title="Technical Skills"
+  icon="fas fa-laptop-code me-2"
+  content=content
+%}
 
-    <li>
-      Parallel scientific computing
-    </li>
-
-    <li>
-      Engineering Plasticity
-    </li>
-
-    <li>
-      Micromechanics
-    </li>
-
-    <li>
-      Defects in materials
-    </li>
-
-    <li>
-      Computational methods in engg
-    </li>
-
-    <li>
-      Mechanical behaviour of materials
-    </li>
-
-    <li>
-      Mathematical methods for chemical engineers
-    </li>
-
-    <li>
-      Advanced phase transformations
-    </li>
-  </ol>
-</div>
-
-<div class="my-4"></div>
-
-
-<div style="border: 2px solid #C2C2C2ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
-  <h4 class="mt-0"><i class="fas fa-tools me-2"></i> Technical Skills</h4>
-
-  <div>
-    <strong>Programming</strong>: MATLAB, Fortran, Julia, Python, Git, OpenMP, MPI, PETSc
-  </div>
-
-  <div>
-    <strong>CAD</strong>: AutoCAD, Autodesk Inventor Pro, Fusion 360
-  </div>
-
-  <div>
-    <strong>CAE</strong>: Ansys, Abaqus, DAMASK, Gmsh
-  </div>
-</div>
-
-
-<div class="my-4"></div>
-
-
-<div style="border: 2px solid #C2C2C2ff; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
-  <h4 class="mt-0"><i class="fas fa-envelope me-2"></i> Contact</h4>
+<!-- Contact -->
+{% capture content %}
   <strong>Email: </strong> 
   <a href="mailto:shivakumar.gdm@gmail.com">shivakumar.gdm@gmail.com</a><br>
   <strong>LinkedIn: </strong> 
   <a href="https://www.linkedin.com/in/shivakumargaddam" target="_blank">
     linkedin.com/in/shivakumargaddam
   </a>
-</div>
+{% endcapture %}
+
+{% include cv-section.html
+  title="Contact"
+  icon="fas fa-envelope me-2"
+  content=content
+%}
