@@ -1,27 +1,37 @@
-/* Repository grid */
+/* ==========================================================
+   Repository grid
+   ========================================================== */
+
 .repositories {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  grid-template-columns: repeat(auto-fill, 300px);
+
   gap: 1.5rem;
+
+  justify-content: center;
 }
 
 
-// ----------------------------------------------------------
-//    Card
-// ----------------------------------------------------------
+/* ==========================================================
+   Card
+   ========================================================== */
+
 .repository-card {
   position: relative;
 
   display: flex;
   flex-direction: column;
 
-  min-width: 0;
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
 
   margin: 0 !important;
   padding: 0 !important;
 
   border: 2px solid var(--main-border-color);
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
 
   background: var(--card-bg);
@@ -34,13 +44,20 @@
   box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
 }
 
+
+/* Card hover */
+
 .repository-card:hover {
-  border-color: var(--link-color);
+  // border-color: var(--link-color);
+
   box-shadow: 0 5px 14px rgb(0 0 0 / 10%);
+
   transform: translateY(-2px);
 }
 
+
 /* Full-card clickable area */
+
 .repository-card-link {
   position: absolute;
 
@@ -77,23 +94,15 @@
 }
 
 
-/* Card hover */
-
-.repository-card:hover {
-  border-color: var(--link-color);
-
-  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
-}
-
-
-/* ----------------------------------------------------------
+/* ==========================================================
    Image
-   ---------------------------------------------------------- */
+   ========================================================== */
 
 .repository-image {
   position: relative;
 
   width: 100%;
+
   aspect-ratio: 16 / 9;
 
   margin: 0 !important;
@@ -123,13 +132,14 @@
   object-position: center;
 
   transform: none !important;
+
   transition: none !important;
 }
 
 
-/* ----------------------------------------------------------
+/* ==========================================================
    Content
-   ---------------------------------------------------------- */
+   ========================================================== */
 
 .repository-content {
   position: relative;
@@ -142,13 +152,14 @@
   min-width: 0;
 
   margin: 0;
+
   padding: 1.15rem 1.25rem 1.1rem;
 }
 
 
-/* ----------------------------------------------------------
+/* ==========================================================
    Header
-   ---------------------------------------------------------- */
+   ========================================================== */
 
 .repository-header {
   display: flex;
@@ -162,7 +173,6 @@
   padding: 0;
 }
 
-
 .repository-header h2 {
   margin: 0;
 
@@ -172,30 +182,35 @@
 }
 
 
-/* ----------------------------------------------------------
+/* ==========================================================
    GitHub icon
-   ---------------------------------------------------------- */
+   ========================================================== */
 
 .repository-github {
   position: absolute;
+
   right: 1.25rem;
   bottom: 1.1rem;
+
   z-index: 2;
 
   font-size: 1.45rem;
+
   line-height: 1;
 
   color: #000 !important;
 
   pointer-events: none;
+
   text-decoration: none !important;
+
   border: 0 !important;
 }
 
 
-/* ----------------------------------------------------------
+/* ==========================================================
    Description
-   ---------------------------------------------------------- */
+   ========================================================== */
 
 .repository-description {
   margin: 0.55rem 0 0;
@@ -215,12 +230,13 @@
 }
 
 
-/* ----------------------------------------------------------
+/* ==========================================================
    Metadata
-   ---------------------------------------------------------- */
+   ========================================================== */
 
 .repository-meta {
   margin: 1rem 0 0;
+
   padding: 0.8rem 0 0;
 
   border-top: 1px solid var(--main-border-color);
@@ -246,7 +262,6 @@
   line-height: 1.4;
 }
 
-
 .repository-languages i {
   flex-shrink: 0;
 
@@ -266,11 +281,11 @@
   gap: 1rem;
 
   margin: 0.65rem 0 0;
+
   padding: 0;
 
   white-space: nowrap;
 }
-
 
 .repository-stats span {
   display: inline-flex;
@@ -283,7 +298,6 @@
   padding: 0;
 }
 
-
 .repository-stats i {
   flex-shrink: 0;
 
@@ -291,9 +305,9 @@
 }
 
 
-/* ----------------------------------------------------------
+/* ==========================================================
    Footer
-   ---------------------------------------------------------- */
+   ========================================================== */
 
 .repository-footer {
   margin: auto 0 0;
@@ -308,29 +322,36 @@
 }
 
 
-// ==========================================================
-//    Responsive layout
-// ==========================================================
-/* Tablet */
-@media (max-width: 1100px) {
-  .repositories {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
+/* ==========================================================
+   Very narrow screens
+   ========================================================== */
 
-/* Mobile */
-@media (max-width: 700px) {
-  .repositories {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-}
+/*
+ * Keep the card at 300px on all normal devices.
+ * On screens narrower than 300px, allow the card to shrink
+ * so the page does not create horizontal scrolling.
+ */
 
-/* Very narrow screens */
 @media (max-width: 400px) {
+  .repositories {
+    grid-template-columns: minmax(0, 1fr);
+
+    width: 100%;
+  }
+
+  .repository-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 300px;
+
+    justify-self: center;
+  }
+
   .repository-stats {
     flex-wrap: wrap;
+
     white-space: normal;
+
     row-gap: 0.5rem;
   }
 }

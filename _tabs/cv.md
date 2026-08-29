@@ -71,7 +71,7 @@ I am a PhD scholar in the Department of Metallurgical and Materials Engineering 
     <strong>Doctoral Research</strong> <br>
     <small>Jul 2022 – Present</small>
     <ul class="mb-0 mt-2">
-      <li><strong>Title:</strong> A computational framework for fracture simulation in polycrystalline materials using adaptive phase-field modelling and octree-based SBFEM </li>
+      <li><strong>Title:</strong> A computationally efficient framework for modelling deformation and fracture in polycrystalline microstructures using the octree-based scaled boundary finite element method </li>
       <li><strong>Supervisors:</strong>
         <ol>
           <li><em>Prof. Anand K Kanjarla</em> – Laboratory for Mechanics of Microstructures, Dept. of Metallurgical and Materials Engineering, IIT Madras.</li>
@@ -80,8 +80,8 @@ I am a PhD scholar in the Department of Metallurgical and Materials Engineering 
       </li>
       <li><strong>Description:</strong>
         <ul>
-          <li>The aim is to develop a computationally efficient framework that combines phase-field modelling with crystal plasticity using the scaled boundary finite element method to simulate nucleation and propagation of cracks in metallic materials.</li>
-          <li>The developed framework will be used to understand the effect of microstructural features on crack nucleation and propagation in metals.</li>
+          <li>To develop an octree-based SBFEM framework for crystal plasticity modelling.</li>
+          <li>Extend the framework further, to simulate brittle fracture using adaptive phase-field modelling.</li>
         </ul>
       </li>
     </ul>
@@ -208,16 +208,16 @@ I am a PhD scholar in the Department of Metallurgical and Materials Engineering 
 
 <!-- Academic Courses -->
 {% capture content %}
-  {% include tag.html keywords="Applied finite element analysis" background="#797777" %}
-  {% include tag.html keywords="Nonlinear FEA of solid continua" background="#797777" %}
-  {% include tag.html keywords="Parallel scientific computing" background="#797777" %}
-  {% include tag.html keywords="Engineering Plasticity" background="#797777" %}
-  {% include tag.html keywords="Micromechanics" background="#797777" %}
-  {% include tag.html keywords="Defects in materials" background="#797777" %}
-  {% include tag.html keywords="Computational methods in engg" background="#797777" %}
-  {% include tag.html keywords="Mechanical behaviour of materials" background="#797777" %}
-  {% include tag.html keywords="Mathematical methods for chemical engineers" background="#797777" %}
-  {% include tag.html keywords="Advanced phase transformations" background="#797777" %}
+  {% include tag.html keywords="Applied finite element analysis" %}
+  {% include tag.html keywords="Nonlinear FEA of solid continua" %}
+  {% include tag.html keywords="Parallel scientific computing" %}
+  {% include tag.html keywords="Engineering Plasticity" %}
+  {% include tag.html keywords="Micromechanics" %}
+  {% include tag.html keywords="Defects in materials" %}
+  {% include tag.html keywords="Computational methods in engg" %}
+  {% include tag.html keywords="Mechanical behaviour of materials" %}
+  {% include tag.html keywords="Mathematical methods for chemical engineers" %}
+  {% include tag.html keywords="Advanced phase transformations" %}
 {% endcapture %}
 
 {% include cv-section.html
@@ -228,21 +228,21 @@ I am a PhD scholar in the Department of Metallurgical and Materials Engineering 
 
 <!-- Technical Skills -->
 {% capture content %}
-  {% include tag.html keywords="Fortran" background="#2B7FFF" %}
-  {% include tag.html keywords="Abaqus" background="#FB2C36" %}
-  {% include tag.html keywords="Julia" background="#2B7FFF" %}
-  {% include tag.html keywords="PETSc" background="#2B7FFF" %}
-  {% include tag.html keywords="MPI" background="#2B7FFF" %}
-  {% include tag.html keywords="OpenMP" background="#2B7FFF" %}
-  {% include tag.html keywords="DAMASK" background="#FB2C36" %}
-  {% include tag.html keywords="MATLAB" background="#2B7FFF" %}
-  {% include tag.html keywords="Python" background="#2B7FFF" %}
-  {% include tag.html keywords="Git" background="#2B7FFF" %}
-  {% include tag.html keywords="Gmsh" background="#FB2C36" %}
-  {% include tag.html keywords="Autodesk Inventor Pro" background="#2D9966" %}
-  {% include tag.html keywords="Fusion 360" background="#2D9966" %}
-  {% include tag.html keywords="Ansys" background="#FB2C36" %}
-  {% include tag.html keywords="AutoCAD" background="#2D9966" %}
+  {% include tag.html keywords="Fortran" background="#C27AFF" %}
+  {% include tag.html keywords="Abaqus" background="#FF6467" %}
+  {% include tag.html keywords="Julia" background="#C27AFF" %}
+  {% include tag.html keywords="PETSc" background="#C27AFF" %}
+  {% include tag.html keywords="MPI" background="#C27AFF" %}
+  {% include tag.html keywords="OpenMP" background="#C27AFF" %}
+  {% include tag.html keywords="DAMASK" background="#FF6467" %}
+  {% include tag.html keywords="MATLAB" background="#C27AFF" %}
+  {% include tag.html keywords="Python" background="#C27AFF" %}
+  {% include tag.html keywords="Git" background="#C27AFF" %}
+  {% include tag.html keywords="Gmsh" background="#FF6467" %}
+  {% include tag.html keywords="Autodesk Inventor Pro" background="#37BC7D" %}
+  {% include tag.html keywords="Fusion 360" background="#37BC7D" %}
+  {% include tag.html keywords="Ansys" background="#FF6467" %}
+  {% include tag.html keywords="AutoCAD" background="#37BC7D" %}
 {% endcapture %}
 
 {% include cv-section.html
