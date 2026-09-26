@@ -228,7 +228,7 @@ I am a PhD scholar in the Department of Metallurgical and Materials Engineering 
 
 <!-- Technical Skills -->
 {% capture content %}
-  {% include tag.html keywords="Fortran" background="#C27AFF" %}
+  <!-- {% include tag.html keywords="Fortran" background="#C27AFF" %}
   {% include tag.html keywords="Abaqus" background="#FF6467" %}
   {% include tag.html keywords="Julia" background="#C27AFF" %}
   {% include tag.html keywords="PETSc" background="#C27AFF" %}
@@ -242,7 +242,11 @@ I am a PhD scholar in the Department of Metallurgical and Materials Engineering 
   {% include tag.html keywords="Autodesk Inventor Pro" background="#37BC7D" %}
   {% include tag.html keywords="Fusion 360" background="#37BC7D" %}
   {% include tag.html keywords="Ansys" background="#FF6467" %}
-  {% include tag.html keywords="AutoCAD" background="#37BC7D" %}
+  {% include tag.html keywords="AutoCAD" background="#37BC7D" %} -->
+  
+  <img src="/assets/img/cv/skills.png"
+       alt="Technical skills"
+       style="max-width: 100%; height: auto;">
 {% endcapture %}
 
 {% include cv-section.html
