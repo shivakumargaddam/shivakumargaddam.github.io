@@ -6,9 +6,15 @@ order: 2
 ---
 
 <ol class="publication-list">
-
-  <!-- <div class="publication-year">2025</div> -->
     
+    {% include publication.html
+      authors='<strong>S. K. Gaddam</strong>, S. Natarajan, A. K. Kanjarla'
+      title="Octree-based scaled boundary finite element framework for crystal plasticity: An open-source ABAQUS implementation"
+      journal="Comput. Methods Appl. Mech. Engrg."
+      details="463 (Part B), 117864 (2027)"
+      doi="10.1016/j.cma.2026.119427"
+    %}
+
     {% include publication.html
       authors='<strong>S. K. Gaddam</strong>, S. Natarajan, A. K. Kanjarla'
       title="Octree-based scaled boundary finite element approach for polycrystal RVEs: A comparison with traditional FE and FFT methods"
@@ -16,8 +22,6 @@ order: 2
       details="438 (Part B), 117864 (2025)"
       doi="10.1016/j.cma.2025.117864"
     %}
-
-  <!-- <div class="publication-year">2024</div> -->
 
     {% include publication.html
       authors='<strong>S. K. Gaddam</strong>, T. V. Varma, A. Ghosh, S. Sarkar'

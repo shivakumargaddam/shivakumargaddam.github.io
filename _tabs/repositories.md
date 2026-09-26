@@ -13,11 +13,11 @@ media_subpath: /assets/img/repositories/
    description="Open-source ABAQUS UELMAT implementation of SBFEM for crystal plasticity."
    url="https://github.com/nsundar/cp-sbfem"
    image="generic_git.png"
-   language="Fortran, Julia"
+   language="Fortran, Julia, Python"
    license="MIT"
    stars="0"
    forks="0"
-   updated="Jul 31, 2026"
+   updated="Sep 25, 2026"
 %}
 
 {% include repository-card.html
