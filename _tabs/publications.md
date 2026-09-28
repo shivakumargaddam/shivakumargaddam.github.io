@@ -11,7 +11,7 @@ order: 2
       authors='<strong>S. K. Gaddam</strong>, S. Natarajan, A. K. Kanjarla'
       title="Octree-based scaled boundary finite element framework for crystal plasticity: An open-source ABAQUS implementation"
       journal="Comput. Methods Appl. Mech. Engrg."
-      details="463 (Part B), 117864 (2027)"
+      details="463 (Part B), 119427 (2027)"
       doi="10.1016/j.cma.2026.119427"
     %}
 
